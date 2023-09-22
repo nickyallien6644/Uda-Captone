@@ -1,8 +1,12 @@
 # Capstone Project
 
->My website: [MyWebsite](http://ae52e4b93953846c8b3e53df4d72e359-719839978.us-west-2.elb.amazonaws.com/)
->My github: 
->ci/cd pipelines: [![CircleCI](https://dl.circleci.com/status-badge/img/gh/nickyallien6644/Uda-Captone/tree/main.svg?style=svg&circle-token=14278455b07ed7b23061a287b62a3b05dce69834)](https://dl.circleci.com/status-badge/redirect/gh/nickyallien6644/Uda-Captone/tree/main)
+## Project Info:
+### My website: 
+[GitHub](https://github.com/nickyallien6644/Uda-Captone)
+[MyWebsite](http://ae52e4b93953846c8b3e53df4d72e359-719839978.us-west-2.elb.amazonaws.com/)
+### My github: 
+### ci/cd pipelines: 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/nickyallien6644/Uda-Captone/tree/main.svg?style=svg&circle-token=14278455b07ed7b23061a287b62a3b05dce69834)](https://dl.circleci.com/status-badge/redirect/gh/nickyallien6644/Uda-Captone/tree/main)
 
 ## Project Overview
 
