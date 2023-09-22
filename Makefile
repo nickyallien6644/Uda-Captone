@@ -44,7 +44,7 @@ rollback:
 	./bin/rollback.sh
 
 forwarding:
-	kubectl port-forward "service/devoops-capstone" 80:80
+	kubectl port-forward "service/$DEPLOYMENT_NAME" 80:80
 
 cleanup:
 	./bin/cleanup.sh

@@ -78,29 +78,23 @@ This CI/CD project automates the entire software development lifecycle, from cod
 ├── app
 │   ├── app.py
 │   ├── Dockerfile
-│   ├── requirements.txt
-│   └── templates
-│       └── index.html
-├── setup
-│   ├── install-dependencies.sh
-│   ├── install-docker.sh
-│   ├── install-eksctl.sh
-│   ├── install-hadolint.sh
-│   ├── install-kubectl.sh
-├── run
+│   └── requirements.txt
+├── bin
+│   ├── build-docker.sh
 │   ├── cleanup.sh
 │   ├── create-cluster.sh
 │   ├── deployment.sh
-│   ├── rolling.sh
+│   ├── install-docker.sh
+│   ├── install-eksctl.sh
 │   ├── install-kubectl.sh
-│   ├── lint.sh
-│   ├── build-docker.sh
-│   ├── forwarding.sh
-│   ├── test.sh
 │   ├── rollback.sh
+│   ├── rolling.sh
 │   ├── run-docker.sh
+│   ├── set_env.sh
+│   ├── update-config-eks.sh
+│   └── upload-docker.sh
 ├── Makefile
-├── README.md
+└── README.md
 ```
 
 The Makefile triggers the execution of the following shell scripts:
