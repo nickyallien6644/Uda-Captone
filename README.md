@@ -96,7 +96,21 @@ This CI/CD project automates the entire software development lifecycle, from cod
 ├── Makefile
 └── README.md
 ```
-
+- **bin**: This directory seems to contain various scripts and utility files for managing and deploying your application.
+  - `build-docker.sh`: A script for building a Docker image.
+  - `cleanup.sh`: A script for cleaning up resources or temporary files.
+  - `create-cluster.sh`: A script for creating a Kubernetes cluster.
+  - `deployment.sh`: A script for managing deployments.
+  - `install-docker.sh`: A script for installing Docker.
+  - `install-eksctl.sh`: A script for installing the EKS (Amazon Elastic Kubernetes Service) CLI tool.
+  - `install-kubectl.sh`: A script for installing `kubectl`, the Kubernetes command-line tool.
+  - `rollback.sh`: A script for rolling back deployments.
+  - `rolling.sh`: A script for managing rolling updates.
+  - `run-docker.sh`: A script for running a Docker container.
+  - `set_env.sh`: A script for setting environment variables.
+  - `update-config-eks.sh`: A script for updating EKS configurations.
+  - `upload-docker.sh`: A script for uploading Docker images.
+  
 The Makefile triggers the execution of the following shell scripts:
 
 ```create-cluster.sh```: creates the EKS cluster
