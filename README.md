@@ -1,46 +1,47 @@
 # Capstone Project
 
->My website: [My blog](http://ab034b37a313c449b923bb4c2aa4e53f-1964705682.us-west-2.elb.amazonaws.com/)
->My github: [Github]()
->ci/cd pipelines: [circleci](https://app.circleci.com/pipelines/github/nvnhann/devoops-capstone/3/workflows/8fac6f73-8d50-45e7-88c8-1af72a43c703/jobs/3)
+## Project Info:
+### My website: 
+[GitHub](https://github.com/nickyallien6644/Uda-Captone)
+[MyWebsite](http://ae52e4b93953846c8b3e53df4d72e359-719839978.us-west-2.elb.amazonaws.com/)
+### My github: 
+### ci/cd pipelines: 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/nickyallien6644/Uda-Captone/tree/main.svg?style=svg&circle-token=14278455b07ed7b23061a287b62a3b05dce69834)](https://dl.circleci.com/status-badge/redirect/gh/nickyallien6644/Uda-Captone/tree/main)
 
-## Overview
+## Project Overview
 
-This project operationalizes a Python Flask demo web my blog using CircleCI and an AWS EKS (Amazon Elastic Kubernetes Service) cluster:
+With the help of CircleCI and an AWS EKS (Amazon Elastic Kubernetes Service) cluster, this project operationalizes a Python Flask example web application for my blog:
 
-1. **Continuous Integration with CircleCI**:
-   - We have set up a CircleCI pipeline to automate the development workflow.
-   - In the pipeline, we perform code linting to ensure code quality.
-   - We build a Docker image of the application.
-   - The Docker image is then pushed to a public Docker Registry, specifically Docker Hub, for easy access and deployment.
+1. **Continuous Integration with CircleCI**: To automate the development workflow, we have put up a CircleCI pipeline.
+   - To assure code quality, we carry out code linting in the pipeline.
+   - The application's Docker image is created.
+   - For simple access and deployment, the Docker image is next posted to a public Docker Registry, especially Docker Hub.
 
-2. **Kubernetes Deployment on AWS EKS**:
-   - We leverage AWS EKS to manage our Kubernetes cluster.
-   - Within the EKS cluster, we deploy and run the Flask application.
-   - This allows us to utilize Kubernetes for container orchestration, scaling, and management.
+2. **Kubernetes Deployment on AWS EKS**: We use AWS EKS to administer our Kubernetes cluster.
+   - We set up and execute the Flask application within the EKS cluster. This enables us to manage, scale, and orchestrate containers using Kubernetes.
 
-3. **Production Deployment and Rolling Updates**:
-   - When it's time to promote a new version of the application to production, we follow a rolling update strategy.
-   - This ensures minimal downtime and seamless transitions between different versions of the application.
-   - Kubernetes handles the orchestration of this update.
+3. **Production Deployment and Rolling Updates**: - We use a rolling update method when it's time to push a new version of the application to production.
+   - We employ a rolling update method when it's time to promote a new version of the application to production.
+   - This guarantees less downtime and easy switching between versions of the program.
+   - This update's orchestration is done using Kubernetes.
 
-4. **Makefile and Shell Scripts**:
-   - To streamline and automate the various tasks in this project, we have organized them into a Makefile.
-   - This structured approach simplifies project management and execution of tasks.
+4. **Makefile and Shell Scripts**: 
+   - We have arranged the numerous activities in this project into a Makefile to simplify and automate them. 
+   - The execution of duties and project management are made easier by this organized approach.
 
-By combining CircleCI, AWS EKS, Docker Hub, and Kubernetes, we have created a robust workflow for developing, testing, and deploying the "hello" Flask application, ensuring efficient development and production deployment processes.
+We have built a solid workflow for building, testing, and deploying the "hello" Flask application using CircleCI, AWS EKS, Docker Hub, and Kubernetes, assuring effective development and production deployment procedures.
 
 ## Tasks
 
 This project follows a CI/CD methodology to build a Docker image and deploy it to a Kubernetes cluster. Here are the key tasks within the project:
 
 1. **Environment Setup**:
-   - Initialize the Python virtual environment: `make setup`
-   - Install all necessary dependencies: `make install`
+   - Create a virtual Python environment. create setup
+   - Use the `make install` command to install all required dependencies.
 
 2. **Code Quality Assurance**:
-   - Test the project's code through linting:
-     - Lint shell scripts, Dockerfile, and Python code: `make lint`
+   - Lint the project's code to check for errors.
+   - `make lint` Python code, Dockerfile, and shell scripts
 
 3. **Docker Image Creation**:
    - Create a Dockerfile to containerize the "hello" application: `Dockerfile`
@@ -49,10 +50,10 @@ This project follows a CI/CD methodology to build a Docker image and deploy it t
    - Deploy the containerized application to a public Docker Registry, specifically Docker Hub.
 
 5. **Kubernetes Cluster Deployment**:
-   - Deploy a Kubernetes cluster using: `make create-cluster`
+   - Use the command `make create-cluster` to deploy a Kubernetes cluster.
 
 6. **Application Deployment in Kubernetes**:
-   - Deploy the application into the Kubernetes cluster: `make deployment`
+   - Make the application available to the Kubernetes cluster by using the `make deployment` command.
 
 7. **Rolling Updates**:
    - Implement an update strategy for the application within the cluster using a rolling-update approach: `make rolling`
@@ -78,41 +79,28 @@ This CI/CD project automates the entire software development lifecycle, from cod
 │   ├── app.py
 │   ├── Dockerfile
 │   ├── requirements.txt
-│   ├── static
-│   │   ├── css
-│   │   │   ├── blog.css
-│   │   │   ├── footer.css
-│   │   │   ├── header.css
-│   │   │   ├── home.css
-│   │   │   ├── main.css
-│   │   │   ├── responsive.css
-│   │   │   └── style.css
-│   │   └── images
-│   │       ├── 1.png
-│   │       ├── 2.png
-│   │       ├── 3.png
-│   │       ├── 4.png
-│   │       ├── avatar.jpg
-│   │       ├── avt.jpg
-│   │       ├── banner.jpg
-│   │       ├── cloud.png
-│   │       ├── ds.png
-│   │       ├── post.png
-│   │       ├── python.png
-│   │       ├── pytorch.png
-│   │       ├── react.png
-│   │       └── tf.png
 │   └── templates
 │       └── index.html
-├── cleanup.sh
-├── create-cluster.sh
-├── deployment.sh
-├── install-docker.sh
-├── install-eksctl.sh
-├── install-kubectl.sh
+├── setup
+│   ├── install-dependencies.sh
+│   ├── install-docker.sh
+│   ├── install-eksctl.sh
+│   ├── install-hadolint.sh
+│   ├── install-kubectl.sh
+├── run
+│   ├── cleanup.sh
+│   ├── create-cluster.sh
+│   ├── deployment.sh
+│   ├── rolling.sh
+│   ├── install-kubectl.sh
+│   ├── lint.sh
+│   ├── build-docker.sh
+│   ├── forwarding.sh
+│   ├── test.sh
+│   ├── rollback.sh
+│   ├── run-docker.sh
 ├── Makefile
 ├── README.md
-└── rolling.sh
 ```
 
 The Makefile triggers the execution of the following shell scripts:
