@@ -6,7 +6,7 @@
 ### My github: 
 [GitHub](https://github.com/nickyallien6644/Uda-Captone)
 ### ci/cd pipelines: 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/nickyallien6644/Uda-Captone/tree/main.svg?style=svg&circle-token=14278455b07ed7b23061a287b62a3b05dce69834)](https://app.circleci.com/pipelines/github/nickyallien6644/Uda-Captone/5/workflows/eb8325d7-4cbe-4960-8428-71a399fedee6/jobs/6)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/nickyallien6644/Uda-Captone/tree/main.svg?style=svg&circle-token=14278455b07ed7b23061a287b62a3b05dce69834)](https://app.circleci.com/pipelines/github/nickyallien6644/Uda-Captone/5/workflows/eb8325d7-4cbe-4960-8428-71a399fedee6/jobs/10)
 
 ## Project Overview
 
